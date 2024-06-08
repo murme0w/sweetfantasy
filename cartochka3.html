@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Корзина - Сладкая Фантазия</title>
+</head>
+<body>
+<header>
+  <img class="logo" src="Основа/1.jpg" alt="banner">
+  <h1>Каталог</h1>
+  <div class="cart-button">
+    <a href="cart.html">
+      <button>Корзина</button>
+    </a>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="catalog.html">Каталог</a>
+  <a href="index.html#abouts-me">О нас</a>
+  <a href="index.html#contacts">Контакты</a>
+</nav>
+
+<div style="padding-top: 20vh;">
+  <h1></h1>
+</div>
+
+<div class="cartochka-box">
+  <div class="cartochka">
+    <div class="product-image">
+      <img src="Эклеры_и_профитроли/3.jpg" alt="эклерпрофитр3">
+  </div>
+  <div class="product-info">
+      <h2 class="product-title"><span style="color: #5d0030; font-family: 'GV'; font-size: 48px">Набор эклеров №1</span></h2>
+      <p class="product-description">
+        Погрузитесь в мир нежности и изыска с нашими эклерами! Этот изысканный десерт представляет собой совершенное сочетание 
+        хрустящего эклера, легкого заварного крема и невероятно ароматного шоколада.
+      </p>
+    <ul>
+      <li>Нежный воздушный эклер, приготовленный по особому рецепту из свежих яиц, высококачественной муки и натурального сахара.</li>
+      <li>Легкий заварной крем, приготовленный на основе свежего молока и ароматного ванильного экстракта.</li>
+      <li>Декоративные шапочки из различных видов шоколада: молочного, белого и горького, придающие эклерам не только прекрасный внешний вид, но и уникальный вкусовой баланс.</li>
+    </ul>
+    <h2>Пищевая ценность на порцию (100 г):</h2>
+    <ul>
+        <li>Калории: 280 ккал</li>
+        <li>Белки: 5 г</li>
+        <li>Жиры: 18 г</li>
+        <li>Углеводы: 25 г</li>
+        <li>Сахар: 15 г</li>
+    </ul>
+    <p class="product-price"><span style="color: #5d0030">Цена</span>: 1600 руб.</p>
+    <button class="add-to-cart" onclick="addToCart('Набор трайфорв №1', 1600, this)" >Добавить в корзину</button>
+  </div>
+  </div>
+</div>
+
+<footer>
+  <p style="padding-top: 3.5vh;">© 2024 Сладкая Фантазия</p>
+</footer>
+
+<script src="JS/cart.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initializeButtonCounts();
+  });
+</script>
+</body>
+</html>

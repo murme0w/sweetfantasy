@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Корзина - Сладкая Фантазия</title>
+</head>
+<body>
+<header>
+  <img class="logo" src="Основа/1.jpg" alt="banner">
+  <h1>Корзина</h1>
+</header>
+
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="catalog.html">Каталог</a>
+  <a href="index.html#abouts-me">О нас</a>
+  <a href="index.html#contacts">Контакты</a>
+</nav>
+
+<div style="padding-top: 20vh;">
+  <div id="cart-items"></div>
+  <div id="cart-total" class="total-right"></div>
+</div>
+
+<button id="checkout-btn">Оформить заказ</button>
+
+<div id="checkout-modal" class="modal">
+  <div class="modal-content">
+    <p>Ваш заказ был оформлен!</p>
+  </div>
+</div>
+
+<footer>
+  <p style="padding-top: 3.5vh;">© 2024 Сладкая Фантазия</p>
+</footer>
+
+<script src="JS/cart.js"></script>
+</body>
+</html>

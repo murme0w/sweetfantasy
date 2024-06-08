@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<title>Каталог - Сладкая Фантазия</title>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="Основа/1.jpg" alt="banner">
+  <h1>Каталог продукции</h1>
+  <div class="cart-button">
+    <a href="cart.html">
+      <button>Корзина</button>
+    </a>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="catalog.html" class="active">Каталог</a>
+  <a href="index.html #abouts-me">О нас</a>
+  <a href="index.html #contacts">Контакты</a>
+</nav>
+
+<div class="category-buttons">
+  <button data-category="all" class="active">Каталог</button>
+  <button id="cakes" data-category="cakes">Торты</button>
+  <button id="pastries" data-category="pastries">Пирожные</button>
+  <button data-category="donuts">Пончики</button>
+  <button id="eclprofit" data-category="eclprofit">Эклеры и профитроли</button>
+  <button data-category="trifles">Трайфлы</button>
+</div>
+
+<div class="product-container">
+  <div class="product" data-category="cakes">
+    <a href="cartochka1.html" style="text-decoration: none; color:black">
+      <img src="Тортики/5.jpg" alt="торт5">
+      <h3>Наполеон</h3>
+      <p>1800 p</p>
+    </a>
+    <button onclick="addToCart('Наполеон', 1800, this)">В корзину</button>  
+  </div>
+  <div class="product" data-category="donuts">
+    <img src="Пончики/4.jpg" alt="пончики4">
+    <h3>Набор пончиков №1</h3>
+    <p>1150 p</p>
+    <button onclick="addToCart('Набор пончиков №1', 1150, this)">В корзину</button>
+  </div>
+  <div class="product" data-category="trifles">
+    <img src="Трайфлы/4.jpg" alt="трайфлы4">
+    <h3>Набор трайфорв №1</h3>
+    <p>1600 p</p>
+    <button onclick="addToCart('Набор трайфорв №1', 1600, this)">В корзину</button>
+  </div>
+  <div class="product" data-category="pastries">
+    <a href="cartochka2.html" style="text-decoration: none; color:black">
+      <img src="Пироженки/8.jpg" alt="пирожное8">
+      <h3>Фруктовое пирожное</h3>
+      <p>400 p</p>
+    </a>
+    <button onclick="addToCart('Фруктовое пирожное', 400, this)">В корзину</button>
+  </div>
+  <div class="product" data-category="eclprofit">
+    <a href="cartochka3.html" style="text-decoration: none; color:black">
+      <img src="Эклеры_и_профитроли/3.jpg" alt="эклерпрофитр3">
+      <h3>Набор эклеров №1</h3>
+      <p>1200 p</p>
+    </a>
+    <button onclick="addToCart('Набор эклеров №1', 1200)">В корзину</button>
+  </div>
+  <div class="product" data-category="donuts">
+    <img src="Пончики/3.jpg" alt="пончики3">
+    <h3>Набор пончиков №2</h3>
+    <p>950 p</p>
+    <button onclick="addToCart('Набор пончиков №2', 950)">В корзину</button>
+  </div>
+  <div class="product" data-category="cakes">
+    <img src="Тортики/2.jpg" alt="торт2">
+    <h3>Черничка</h3>
+    <p>1750 p</p>
+    <button onclick="addToCart('Черничка', 1750)">В корзину</button>
+  </div>
+  <div class="product" data-category="pastries">
+    <img src="Пироженки/3.jpg" alt="пирожное3">
+    <h3>Ягодное ассорти</h3>
+    <p>450 p</p>
+    <button onclick="addToCart('Ягодное ассорти', 450)">В корзину</button>
+  </div>
+  <div class="product" data-category="trifles">
+    <img src="Трайфлы/5.jpg" alt="трайфлы5">
+    <h3>Набор трайфорв №2</h3>
+    <p>1750 p</p>
+    <button onclick="addToCart('Набор трайфорв №2', 1750)">В корзину</button>
+  </div>
+  <div class="product" data-category="eclprofit">
+    <img src="Эклеры_и_профитроли/5.jpg" alt="эклерпрофитр5">
+    <h3>Набор эклеров №2</h3>
+    <p>1350 p</p>
+    <button onclick="addToCart('Набор эклеров №2', 1350)">В корзину</button>
+  </div>
+</div>
+
+
+<footer>
+  <p style="padding-top: 3.5vh;">© 2024 Сладкая Фантазия</p>
+</footer>
+
+<script src="JS/script.js"></script>
+<script src="JS/cart.js"></script>
+
+</body>
+</html>
